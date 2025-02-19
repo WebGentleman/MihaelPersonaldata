@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mihael Rošić - Digital Business Card</title>
+  <!-- Google Fonts for a modern, professional look -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700|Open+Sans:400,600&display=swap" rel="stylesheet" />
+  <!-- AOS CSS for scroll animations -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <style>
+    /* Global resets */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background: #121212; /* Dark background */
+      font-family: 'Open Sans', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      color: #E0E0E0;
+    }
+    /* Business Card Container */
+    .card {
+      width: 350px;
+      background: #1E1E1E; /* Slightly lighter dark shade */
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+      overflow: hidden;
+    }
+    /* Header Section */
+    .card-header {
+      background: #1bf0f7f6; /* Accent color */
+      padding: 20px;
+      text-align: center;
+    }
+    .card-header h1 {
+      font-family: 'Roboto', sans-serif;
+      color: #141c1cf6;
+      font-size: 1.8em;
+      margin-bottom: 5px;
+    }
+    .card-header p {
+      color: #090000;
+      font-size: 0.95em;
+    }
+    /* Body Section */
+    .card-body {
+      padding: 20px;
+      font-size: 1em;
+      line-height: 1.5;
+    }
+    .card-body p {
+      margin: 12px 0;
+    }
+    .card-body a {
+      color: #03DAC6; /* Teal accent */
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .card-body a:hover {
+      text-decoration: underline;
+    }
+    /* Footer Section for QR Code */
+    .card-footer {
+      padding: 20px;
+      background: #121212;
+      text-align: center;
+    }
+    .card-footer img {
+      border: 2px solid #03DAC6;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card" data-aos="fade-up">
+    <div class="card-header">
+      <h1>Mihael Rošić</h1>
+     <b> <p>Skipper/Sailor</p></b>
+    </div>
+    <div class="card-body">
+      <p>Email: <a href="email: mihael.rosic@gmail.com">mihael.rosic@gmail.com</a></p>
+      <p>Phone: <a href="phone: +385 91 9159 764">+385 91 9159 764</a></p>
+      <p>Located in: <a href="Located in: Malinska, Island Krk, Croatia">Malinska, Island Krk, Croatia</a></p>
+      <p>Click to open: <a href="cv.pdf" target="_blank">My personal CV</a></p>
+
+    </div>
+    
+  </div>
+
+  <!-- AOS JavaScript -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000, // Animation duration in milliseconds
+      once: true      // Animate only once
+    });
+  </script>
+</body>
+</html>
